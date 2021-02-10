@@ -1,0 +1,19 @@
+{{page-title "BookStores"}}
+
+<ul>
+  {{#each this.model.bookShops as |bookShop|}}
+    <li>
+      <p>Book shop name: {{bookShop.name}}</p>
+      <p>Book shop owner: {{bookShop.owner.name}}</p>
+    </li>
+  {{/each}}
+</ul>
+
+<ul>
+  {{#each this.model.books as |book|}}
+    <li>
+      <p>Book name: {{book.name}}</p>
+    </li>
+  {{/each}}
+</ul>
+
